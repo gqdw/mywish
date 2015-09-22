@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Project(models.Model):
 	name = models.CharField(max_length=30)
-	begintime = models.DateField(auto_now=True)
+	begintime = models.DateField()
 	endtime = models.DateField()
 	todo = models.TextField()
 
