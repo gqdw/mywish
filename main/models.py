@@ -12,5 +12,6 @@ class 	MyWish(models.Model):
 	name =  models.CharField(max_length=30)
 	url = models.URLField()
 	price = models.FloatField()
-	project = models.ForeignKey(Project)
+	#project = models.ForeignKey(Project)
+	project = models.ManyToManyField(Project)
 
