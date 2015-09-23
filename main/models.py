@@ -4,7 +4,7 @@ from django.db import models
 class Project(models.Model):
 	name = models.CharField(max_length=30)
 	begintime = models.DateField()
-	endtime = models.DateField()
+	endtime = models.DateField(blank=True)
 	todo = models.TextField()
 	def __unicode__(self):
 		return self.name
