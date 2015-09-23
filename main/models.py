@@ -17,6 +17,7 @@ class 	MyWish(models.Model):
 	price = models.FloatField(blank=True)
 	#project = models.ForeignKey(Project)
 	project = models.ManyToManyField(Project,blank=True)
-	def __unicode(self):
-		return "%s %s %s" % (self.name,self.project,self.price)
+	def __unicode__(self):
+		#return "%s %s %s" % (self.name,self.project,self.price)
+		return self.name
 
