@@ -15,6 +15,7 @@ class 	MyWish(models.Model):
 	why = models.TextField(blank=True)
 	url = models.URLField(blank=True)
 	price = models.FloatField(blank=True)
+	begintime = models.DateField(blank=True)
 	#project = models.ForeignKey(Project)
 	project = models.ManyToManyField(Project,blank=True)
 	def __unicode__(self):
